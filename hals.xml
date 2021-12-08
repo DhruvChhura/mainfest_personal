@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote  name="dhruv"
+	<remote name="dhruv"
 		fetch="https://github.com/DhruvChhura" />
 
+	<remote name="dhruvscape"
+		fetch="https://github.com/dhruvscape" />
+
+    <remove-project name="hardware_qcom_wlan" />
     <remove-project name="platform_hardware_qcom_audio" />
     <remove-project name="platform_hardware_qcom_display" />
     <remove-project name="platform_hardware_qcom_media" />
     <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf" remote="dhruv" revision="display-msm8996-s" clone-depth="1" />
     <project path="hardware/qcom-caf/msm8996/media" name="hardware_qcom-caf" remote="dhruv" revision="media-msm8996-s" clone-depth="1" />
     <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom-caf" remote="dhruv" revision="audio-msm8996-s" clone-depth="1" />
-
+    <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="dhruvscape" revision="12" clone-depth="1" />
 </manifest>
 
